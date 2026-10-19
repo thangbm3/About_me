@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1718" />
+    <meta name="description" content="Minh Thang Bui — robotics researcher building perception-aware reactive motion and robot manipulation systems. Featured: RMPflow-Magnetic, IEEE RA-L 2026." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Minh Thang Bui — Robots That React" />
+    <meta property="og:description" content="Radar-grounded reactive motion planning, tested on a real robot around moving transparent obstacles." />
+    <meta property="og:image" content="./media/ur10-poster.webp" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Minh Thang Bui — Robotics Researcher</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preload" href="./media/ur10-poster.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script is:inline src="./main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="nav-wrap">
+        <a class="brand" href="#top" aria-label="Minh Thang Bui, back to top">
+          <span class="brand-mark">MTB<span>.</span></span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-title">Robotics Research</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#approach">Approach</a>
+          <a href="#publications">Publications</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="header-contact" href="mailto:thangbm3@g.skku.edu">Contact <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero dark-section" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-kicker">
+            <span class="mono eyebrow"><span class="status-dot" aria-hidden="true"></span> RESEARCH PORTFOLIO / 2026</span>
+            <span class="mono kicker-right">PERCEPTION &nbsp;→&nbsp; PLANNING &nbsp;→&nbsp; CONTROL</span>
+          </div>
+          <div class="hero-heading-grid">
+            <h1 id="hero-title">Robots that<br /><span class="hero-second-line">react<span class="accent-dot">.</span></span></h1>
+            <div class="hero-description">
+              <span class="mono accent eyebrow">HELLO, I'M MINH THANG BUI</span>
+              <p>I build sensing-aware motion systems that help robots respond to a changing world without losing sight of the goal.</p>
+              <a class="text-link light-link" href="#research">Explore the research <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <figure class="featured-demo" aria-labelledby="demo-caption">
+            <div class="film-frame">
+              <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="./media/ur10-poster.webp" aria-label="UR10 robot responding to moving transparent obstacles held by an experimenter">
+                <source src="./media/ur10-hero.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <div class="film-gradient" aria-hidden="true"></div>
+              <div class="film-top mono">
+                <span><span class="film-square" aria-hidden="true"></span> REAL ROBOT / UR10</span>
+                <span class="film-index">DEMONSTRATION 001</span>
+              </div>
+              <div class="film-bottom">
+                <div class="film-caption-top">
+                  <span class="mono film-small">RADAR-GROUNDED REACTIVE AVOIDANCE</span>
+                  <strong>Transparent objects.<br />Real-time responses.</strong>
+                </div>
+                <button type="button" class="watch-button" id="openDemo" aria-label="Watch the full 20-second UR10 demonstration">
+                  <span class="play-icon" aria-hidden="true">▶</span>
+                  <span>Watch full demo <small>20 sec / experiment</small></span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+            <figcaption id="demo-caption" class="demo-footnote">
+              <span><span class="footnote-number mono">FIG / 01</span> Representative UR10 test with moving transparent obstacles. Demonstration from the RMPflow-Magnetic study.</span>
+              <span class="mono demo-tech">6 DOF &nbsp;·&nbsp; END-OF-ARM RADAR &nbsp;·&nbsp; 50 HZ REACTIVE POLICY</span>
+            </figcaption>
+          </figure>
+          <div class="hero-bottom-rule" aria-hidden="true"><span>SCROLL TO EXPLORE</span><span>↓</span></div>
+        </div>
+      </section>
+
+      <div class="focus-strip" aria-label="Research focus areas">
+        <div class="container focus-inner mono">
+          <span>01 &nbsp; SENSING</span><span class="focus-star" aria-hidden="true">✳</span>
+          <span>02 &nbsp; REACTIVE MOTION</span><span class="focus-star" aria-hidden="true">✳</span>
+          <span>03 &nbsp; ROBOT MANIPULATION</span><span class="focus-star" aria-hidden="true">✳</span>
+          <span>REAL-WORLD ROBOTICS</span>
+        </div>
+      </div>
+
+      <section class="intro light-section section-pad" id="research" aria-labelledby="research-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="mono chapter-tag">01 / FEATURED RESEARCH</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="mono chapter-aside">IEEE ROBOTICS AND AUTOMATION LETTERS · 2026</span>
+          </div>
+          <div class="intro-layout">
+            <h2 id="research-title" class="display-title reveal">Avoid the obstacle.<br /><span class="muted-title">Keep the motion.</span></h2>
+            <div class="intro-copy reveal">
+              <p class="lead">Collision avoidance is not just about keeping distance. It's about continuing the task when something suddenly gets in the way.</p>
+              <p><strong>RMPflow-Magnetic</strong> combines end-of-arm mmWave radar with a velocity-aware magnetic steering policy. Radar-derived distance and closing speed shape <em>both</em> the steering force and the metric used by RMPflow to fuse motion objectives.</p>
+              <a class="text-link" href="https://doi.org/10.1109/LRA.2026.3706942" target="_blank" rel="noopener noreferrer">Read the RA-L paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="research-labels reveal" aria-label="Research characteristics">
+            <span><span class="label-pin"></span>Radar sensing at the end-effector</span>
+            <span><span class="label-pin"></span>Velocity-aware tangential steering</span>
+            <span><span class="label-pin"></span>Real-world experimental validation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trajectory-section light-section section-pad-tight" aria-labelledby="trajectory-title">
+        <div class="container">
+          <div class="figure-story-grid">
+            <div class="figure-story-text reveal">
+              <span class="mono chapter-tag">02 / THE MOTION</span>
+              <h2 id="trajectory-title">A path that<br />adapts.</h2>
+              <p>Two moving obstacles sequentially enter the robot's path. Rather than stopping at each encounter, the end-effector reshapes its local trajectory and continues toward the target.</p>
+              <p class="small-muted">The radar provides the closest detected obstacle at each update; this study evaluates successive local encounters, not full multi-object tracking.</p>
+              <a class="text-link" href="./figures/trajectory-original.pdf" target="_blank" rel="noopener noreferrer">Open original figure <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="plot-card trajectory-plot reveal">
+              <div class="plot-label mono"><span>FIG. 04 / RA-L 2026</span><span>3D TASK SPACE</span></div>
+              <img src="./figures/trajectory.webp" loading="eager" decoding="async" alt="3D chart: blue end-effector trajectory curves from Start at the right to Goal at the left while two dotted obstacle trajectories cross its path." width="1814" height="1210" />
+              <figcaption>End-effector trajectory under successive dynamic obstacle encounters. Figure supplied by the author.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="mechanism-section light-section section-pad-tight" id="approach" aria-labelledby="mechanism-title">
+        <div class="container">
+          <div class="figure-story-grid mechanism-grid">
+            <figure class="plot-card field-plot reveal">
+              <div class="plot-label mono"><span>FIG. 02 / RA-L 2026</span><span>MAGNETIC VECTOR FIELD</span></div>
+              <img src="./figures/magnetic-field.webp" loading="eager" decoding="async" alt="Magnetic steering vector field with a red trajectory bending around an obstacle region from a blue start point to a green goal point." width="1123" height="842" />
+              <figcaption>Field distribution and tangential steering illustration. Figure supplied by the author.</figcaption>
+            </figure>
+            <div class="figure-story-text reveal">
+              <span class="mono chapter-tag">03 / THE IDEA</span>
+              <h2 id="mechanism-title">Steer around.<br />Not just away.</h2>
+              <p>Conventional repulsive potential fields can directly oppose goal attraction. Magnetic-field-inspired steering instead redirects motion tangentially around an obstacle.</p>
+              <p>The key contribution goes further: the same radar-derived closing-speed signal influences <strong>how to steer</strong> and <strong>how strongly the policy participates</strong> in RMPflow fusion.</p>
+              <a class="text-link" href="./figures/magnetic-field-original.pdf" target="_blank" rel="noopener noreferrer">Open original figure <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-section dark-section section-pad" id="results" aria-labelledby="results-title">
+        <div class="container">
+          <div class="section-heading dark-heading reveal">
+            <span class="mono chapter-tag">04 / THE RESULTS</span><span class="section-rule" aria-hidden="true"></span><span class="mono chapter-aside">MULTIPLE DYNAMIC OBSTACLES</span>
+          </div>
+          <div class="results-heading reveal">
+            <h2 id="results-title">Built to respond.<br /><span class="result-light">Measured to prove it.</span></h2>
+            <p>Matched radar-based comparison on a real UR10, with 10 experimental runs per method in this scenario.</p>
+          </div>
+          <div class="results-grid">
+            <article class="result-card reveal">
+              <div class="result-top mono"><span>SUCCESS RATE</span><span>HIGHER IS BETTER ↑</span></div>
+              <div class="metric-main"><span>80<span class="metric-unit">%</span></span><span class="metric-vs">vs. 20% baseline</span></div>
+              <div class="bars" aria-label="Success rate 80% with magnetic steering, 20% with potential field">
+                <div class="bar-row"><span>MS + Radar</span><div class="bar-track"><div class="bar-fill primary" style="width:80%"></div></div><strong>80%</strong></div>
+                <div class="bar-row"><span>PF + Radar</span><div class="bar-track"><div class="bar-fill secondary" style="width:20%"></div></div><strong>20%</strong></div>
+              </div>
+            </article>
+            <article class="result-card reveal">
+              <div class="result-top mono"><span>REACTIVE CLEARING TIME</span><span>LOWER IS BETTER ↓</span></div>
+              <div class="metric-main"><span>0.70<span class="metric-unit">s</span></span><span class="metric-vs">vs. 1.12 s baseline</span></div>
+              <div class="bars" aria-label="Clearing time 0.70 seconds with magnetic steering versus 1.12 seconds with potential field">
+                <div class="bar-row"><span>MS + Radar</span><div class="bar-track"><div class="bar-fill primary" style="width:62.5%"></div></div><strong>0.70 s</strong></div>
+                <div class="bar-row"><span>PF + Radar</span><div class="bar-track"><div class="bar-fill secondary" style="width:100%"></div></div><strong>1.12 s</strong></div>
+              </div>
+            </article>
+          </div>
+          <p class="results-source mono reveal">SOURCE: BUI ET AL., IEEE RA-L 2026, TABLE III. VALUES ARE REPORTED FOR THE MULTIPLE-DYNAMIC-OBSTACLE SCENARIO; N = 10 TRIALS / METHOD. REACTIVE CLEARING TIME: 0.70 ± 0.12 S VS 1.12 ± 0.20 S.</p>
+        </div>
+      </section>
+
+      <section class="pipeline-section light-section section-pad" aria-labelledby="pipeline-title">
+        <div class="container">
+          <div class="section-heading reveal"><span class="mono chapter-tag">05 / UNDER THE HOOD</span><span class="section-rule" aria-hidden="true"></span><span class="mono chapter-aside">SENSING TO MOTION</span></div>
+          <div class="pipeline-heading reveal">
+            <h2 id="pipeline-title">A closed loop,<br />not a fixed path.</h2>
+            <p>Interaction state drives the steering direction and its influence inside a geometric motion-policy fusion framework.</p>
+          </div>
+          <div class="pipeline-grid reveal" aria-label="Radar-to-control pipeline">
+            <div class="pipeline-step"><span class="mono pipeline-index">01 / SENSE</span><span class="pipeline-icon" aria-hidden="true">◉</span><h3>End-of-arm radar</h3><p>Distance, direction & Doppler radial velocity</p></div>
+            <div class="pipeline-step"><span class="mono pipeline-index">02 / INTERPRET</span><span class="pipeline-icon" aria-hidden="true">↗</span><h3>Interaction urgency</h3><p>Relative position & approaching closing speed</p></div>
+            <div class="pipeline-step accent-step"><span class="mono pipeline-index">03 / CO-DESIGN</span><span class="pipeline-icon" aria-hidden="true">✳</span><h3>Magnetic avoidance leaf</h3><p>Tangential steering <em>and</em> metric activation</p></div>
+            <div class="pipeline-step"><span class="mono pipeline-index">04 / FUSE</span><span class="pipeline-icon" aria-hidden="true">⇢</span><h3>RMPflow</h3><p>Fuse obstacle response with target-directed motion</p></div>
+          </div>
+          <div class="pipeline-note reveal"><span class="mono">DESIGN PRINCIPLE</span><p>Don't design the steering force and its metric independently. Let the same immediate interaction signal govern both.</p></div>
+        </div>
+      </section>
+
+      <section class="publications-section light-section section-pad" id="publications" aria-labelledby="publications-title">
+        <div class="container">
+          <div class="section-heading reveal"><span class="mono chapter-tag">06 / SELECTED PUBLICATIONS</span><span class="section-rule" aria-hidden="true"></span><span class="mono chapter-aside">PEER-REVIEWED RESEARCH</span></div>
+          <h2 id="publications-title" class="publications-title reveal">Ideas made <span>public.</span></h2>
+          <div class="publication-list">
+            <article class="publication reveal">
+              <div class="publication-number mono">01 — 2026</div>
+              <div class="publication-main"><span class="mono pub-journal">IEEE ROBOTICS AND AUTOMATION LETTERS</span><h3>RMPflow-Magnetic: End-of-Arm Radar-Grounded Reactive Avoidance for Manipulator Motion in Dynamic Environments</h3><p><strong>Minh Thang Bui</strong>, Hyunchang Kang, HyukJae Sung, Sung-Jin Han, Xuan Phuc Le, Duc Hoang Anh Nguyen, Hyouk Ryeol Choi</p></div>
+              <a class="pub-arrow" href="https://doi.org/10.1109/LRA.2026.3706942" target="_blank" rel="noopener noreferrer" aria-label="Open RMPflow-Magnetic paper DOI">↗</a>
+            </article>
+            <article class="publication reveal">
+              <div class="publication-number mono">02 — 2026</div>
+              <div class="publication-main"><span class="mono pub-journal">IEEE SENSORS JOURNAL</span><h3>Enhancing End-of-Arm Radar-Enabled Safety System by Deep Learning Technique</h3><p><strong>Minh Thang Bui</strong>, Hyun Chang Kang, Hyouk Ryeol Choi</p></div>
+              <a class="pub-arrow" href="https://doi.org/10.1109/JSEN.2025.3639627" target="_blank" rel="noopener noreferrer" aria-label="Open end-of-arm radar paper DOI">↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-section light-section section-pad-tight" aria-labelledby="next-title">
+        <div class="container">
+          <div class="next-card reveal">
+            <span class="mono chapter-tag">WHAT'S NEXT / WORK IN PROGRESS</span>
+            <div class="next-card-body"><h2 id="next-title">Beyond avoidance.<br /><span>Into manipulation.</span></h2><div><p>Currently exploring how reactive motion execution and learning-based grasping can work together in dual-arm, dexterous manipulation systems.</p><span class="mono next-status"><span class="status-dot" aria-hidden="true"></span> RB-Y1 / DEXTEROUS MANIPULATION</span></div></div>
+            <span class="next-corner" aria-hidden="true">↗</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section light-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-left reveal"><span class="mono chapter-tag">07 / THE PERSON BEHIND THE ROBOT</span><h2 id="about-title">Hi, I'm<br />Minh Thang<span class="accent-dark-dot">.</span></h2></div>
+          <div class="about-right reveal"><p class="about-lead">I'm a PhD researcher at Sungkyunkwan University, working at the intersection of robot perception, reactive planning, and real-world manipulation.</p><p>My work spans radar-based sensing, motion-policy design, real-robot integration, and ongoing exploration of dexterous robot skills. I'm most interested in systems where perception and control work together — not just in simulation, but on actual hardware.</p><div class="about-meta"><span><span class="mono">AFFILIATION</span>Sungkyunkwan University · AIDIN Robotics</span><span><span class="mono">RESEARCH INTERESTS</span>Robot manipulation · Reactive motion planning · Robot perception</span></div><div class="about-links"><a class="pill-link" href="mailto:thangbm3@g.skku.edu">Email me ↗</a><a class="pill-link secondary-pill" href="https://scholar.google.com/scholar?q=%22Minh+Thang+Bui%22" target="_blank" rel="noopener noreferrer">Google Scholar search ↗</a></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer dark-section">
+      <div class="container">
+        <div class="footer-top"><div><span class="mono accent eyebrow">LET'S BUILD WHAT'S NEXT</span><h2>Let's talk <span>robots.</span></h2></div><a class="footer-email" href="mailto:thangbm3@g.skku.edu">thangbm3@g.skku.edu <span aria-hidden="true">↗</span></a></div>
+        <div class="footer-bottom mono"><span>© 2026 MINH THANG BUI</span><span>MADE FOR RESEARCH, NOT HYPE.</span><a href="#top">BACK TO TOP ↑</a></div>
+      </div>
+    </footer>
+
+    <dialog id="demoDialog" class="demo-dialog" aria-labelledby="dialogTitle">
+      <div class="dialog-header"><span id="dialogTitle" class="mono">UR10 / FULL EXPERIMENT / 20 SEC</span><button type="button" class="dialog-close" id="closeDemo" aria-label="Close video">✕</button></div>
+      <video id="fullDemoVideo" controls playsinline preload="none" poster="./media/ur10-poster.webp" aria-label="Full UR10 collision-avoidance test recording"><source src="./media/ur10-full-demo.mp4" type="video/mp4" />Video playback is not supported.</video>
+      <p class="dialog-note">Original experiment footage, compressed for web playback. Presented without claim of formal collision-safety guarantees.</p>
+    </dialog>
+  </body>
+</html>
